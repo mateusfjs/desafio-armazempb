@@ -37,7 +37,7 @@ public class PedidoService {
             var pedido = this.pedidoRepository.findById(id).get();
             pedido.setData_pedido(pedidoUpdate.getData_pedido());
             pedido.setValor_total(pedidoUpdate.getValor_total());
-            pedido.setCliente(pedidoUpdate.getCliente());
+            pedido.setId_cliente(pedidoUpdate.getId_cliente());
 
             return pedidoRepository.save(pedido);
 

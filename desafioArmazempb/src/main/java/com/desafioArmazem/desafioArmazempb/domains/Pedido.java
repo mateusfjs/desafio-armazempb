@@ -17,7 +17,7 @@ public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private Cliente cliente;
+    private long id_cliente;
     private double valor_total;
     private Timestamp data_pedido;
 
